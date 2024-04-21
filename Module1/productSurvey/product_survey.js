@@ -22,8 +22,8 @@
         document.getElementById('userDesignation').innerHTML = designation;
         document.getElementById('userProductChoice').innerHTML = productType;
         document.getElementById('userFeedback').innerHTML = feedback;
-
         alert('Thank you for your valuable feedback');
+
     }
 
     document.addEventListener('keydown', function(event) {
