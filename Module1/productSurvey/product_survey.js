@@ -1,8 +1,5 @@
-    
-
     const submitButton=document.getElementById('submitBtn');
     submitButton.onclick = submitFeedback;
-
 
     function submitFeedback() {
 
