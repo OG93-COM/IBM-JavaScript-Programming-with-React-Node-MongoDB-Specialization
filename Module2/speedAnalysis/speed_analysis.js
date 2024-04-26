@@ -36,6 +36,7 @@ function startTest() {
             "<p>Words Typed: " + typedWords + "</p>" +
             "<p>Time Elapsed: " + timeElapsed.toFixed(2) + " seconds</p>" +
             "<p>Words Per Minute (WPM): " + wpm + "</p>";
+            
         // Reset the button
         var button = document.getElementById("btn");
         button.innerHTML = "Start Test";
