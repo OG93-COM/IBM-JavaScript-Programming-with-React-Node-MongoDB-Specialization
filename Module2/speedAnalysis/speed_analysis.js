@@ -11,12 +11,13 @@ function startTest() {
     var button = document.getElementById("btn");
     button.innerHTML = "End Test";
     button.onclick = endTest;
+    document.getElementById("userInput").value = "";
     }
 
     function endTest() {
         endTime = new Date().getTime();
         // Disable user input
-        document.getElementById("userInput").readOnly = true;
+        // document.getElementById("userInput").readOnly = true;
         // Calculate time elapsed and words per minute (WPM)
         var timeElapsed = (endTime - startTime) / 1000; // in seconds
         var userTypedText = document.getElementById("userInput").value;
