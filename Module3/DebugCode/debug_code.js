@@ -8,6 +8,7 @@ function performOperation() {
     let result = multiply(num1, num2);
     // Display the result
     displayResult(result);
+    
   } else {
     displayResult("Please enter valid numbers");
   }
