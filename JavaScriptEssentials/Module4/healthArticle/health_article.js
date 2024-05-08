@@ -48,10 +48,8 @@ articles.forEach(function(article) {
     articlesDiv.appendChild(articleDiv);
   });
 
-  var articleDiv = document.createElement('div');
-  articleDiv.classList.add('article');
-  articleDiv.appendChild(title);
-}
+  
 
+}
 
   xhr.send();
