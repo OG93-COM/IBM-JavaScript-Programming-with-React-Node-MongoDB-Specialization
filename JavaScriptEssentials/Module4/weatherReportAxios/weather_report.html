@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather - Lattitude and Longitude Report</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Weather API JavaScript</h1>
+    <main>
+        
+        <div>
+            <h1>Weather Report</h1>
+            <form id="weatherForm">
+                <label for="cityweather">Enter City:</label>
+                <input type="text" id="cityweather" name="cityweather">
+                <button type="submit">Get Weather</button>
+            </form>
+            <div id="weatherInfo"></div>
+        </div>
+        <div>
+            <h1>Lattitude and Longitude</h1>
+            <form id="latlonForm">
+                <label for="lat">Lattitude:</label>
+                <input type="text" id="lat" name="latname">
+                <label for="lon">Longitude:</label>
+                <input type="text" id="lon" name="lonname">
+
+                <button type="submit">Get Weather</button>
+            </form>
+            <div id="latlonInfo"></div>
+        </div>
+
+    </main>
+
+
+    <script src="./weather_report.js"></script>
+</body>
+
+</html>
