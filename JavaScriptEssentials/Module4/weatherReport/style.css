@@ -1,0 +1,23 @@
+*{
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+main > div {
+    flex: 1;
+    padding: 2rem;
+    margin: 4rem;
+    max-width: 40rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px 5px #ececec4b;
+    background-color: #e4e4e463;
+}
+#weatherInfo, #weatherForm, #latlonForm, #latlonInfo {
+    margin: 1rem;
+}
