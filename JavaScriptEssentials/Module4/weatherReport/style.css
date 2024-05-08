@@ -1,5 +1,9 @@
 *{
-    margin: 0 auto;
+    margin: 15px auto;
+}
+
+body{
+    text-align: center;
 }
 
 main {
@@ -14,9 +18,11 @@ main > div {
     padding: 2rem;
     margin: 4rem;
     max-width: 40rem;
+    min-height: 15rem;
     border-radius: 1rem;
-    box-shadow: 5px 5px 10px 5px #ececec4b;
-    background-color: #e4e4e463;
+    box-shadow: 5px 5px 10px 5px #ecececd8;
+    border: 2px solid #ececec;
+    background-color: #f5f5f563;
 }
 #weatherInfo, #weatherForm, #latlonForm, #latlonInfo {
     margin: 1rem;
