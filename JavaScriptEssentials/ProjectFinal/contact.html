@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CONTACT US | Travel Plan OG</title>
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo.png" alt="">
+        <ul>
+            <li><a href="./" id="home">Home </a></li>
+            <li><a href="./about.html" id="about">About Us </a></li>
+            <li><a href="./contact.html" id="contact">Contact Us </a></li>
+        </ul>
+        <div>
+            <input type="text" id="destinationInput" placeholder="Enter a destination or keywords"> 
+            <button id='btnSearch' >Search</button>
+            <button id='btnReset'>Reset</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="socialMedia">
+            <img src="./img/line.png" alt="">
+            <a href="#"><i class="fa fa-twitter" ></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="mainContent">
+            <div class="section">
+                <div class="rightContent">
+                    <h1>Contact US</h1>
+                </div>
+            </div>
+            <div class="section">
+                <div class="contactContent">
+                    <h1>Contact Us</h1>
+                    <p>Feel free to contact us to know more about our plan Travel</p>
+                    <form id="contactForm">
+                        <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" onclick="thankyou()" class="btnContact">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+    <script>
+        
+        function thankyou(){
+            alert('Thank you for you Message');   
+        }
+      </script>
+</body>
+
+</html>
