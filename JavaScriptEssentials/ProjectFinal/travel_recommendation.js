@@ -32,7 +32,21 @@ function searchPlan() {
                 });
             });
 
-            if (beaches.length > 0) {
+            if  (inputSearch.includes('countr')){
+                data.countries.forEach(coutry => {
+                    coutry.cities.forEach(city => {
+                    resultDiv.innerHTML += `
+                        <div class="leftContent">
+                            <img src="${city.imageUrl}" alt="">
+                            <div class="info">
+                                <h2>${city.name}</h2>
+                                <p>${city.description}</p>
+                                <button id="btnVisit">Visit</button>
+                            </div>
+                        </div>`; })
+                })}
+            
+            else if (beaches.length > 0 || inputSearch.includes('beach')) {
                 beaches.forEach(beach => {
                     resultDiv.innerHTML += `
                         <div class="leftContent">
@@ -58,7 +72,9 @@ function searchPlan() {
                 });
             } else if (cityResult !== '') {
                 resultDiv.innerHTML += cityResult;
-            } else {
+            }
+            
+            else {
                 resultDiv.innerHTML = '<div class="leftContent info"><h2>Please Add valid search</h2></div>';
             }
           })
