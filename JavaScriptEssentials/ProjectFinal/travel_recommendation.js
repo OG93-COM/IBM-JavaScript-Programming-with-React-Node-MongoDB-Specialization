@@ -44,9 +44,20 @@ function searchPlan() {
                                 <button id="btnVisit">Visit</button>
                             </div>
                         </div>`; })
-                })}
-            
-            else if (beaches.length > 0 || inputSearch.includes('beach')) {
+                })
+            } else if (inputSearch.includes('beach')){
+                data.beaches.forEach(beach => {
+                    resultDiv.innerHTML += `
+                    <div class="leftContent">
+                        <img src="${beach.imageUrl}" alt="">
+                        <div class="info">
+                            <h2>${beach.name}</h2>
+                            <p>${beach.description}</p>
+                            <button id="btnVisit">Visit</button>
+                        </div>
+                    </div>`;
+                })
+                } else if (beaches.length > 0) {
                 beaches.forEach(beach => {
                     resultDiv.innerHTML += `
                         <div class="leftContent">
@@ -54,6 +65,19 @@ function searchPlan() {
                             <div class="info">
                                 <h2>${beach.name}</h2>
                                 <p>${beach.description}</p>
+                                <button id="btnVisit">Visit</button>
+                            </div>
+                        </div>`;
+                });
+
+            } else if (inputSearch.includes('templ')){
+                data.temples.forEach(temple => {
+                    resultDiv.innerHTML += `
+                        <div class="leftContent">
+                            <img src="${temple.imageUrl}" alt="">
+                            <div class="info">
+                                <h2>${temple.name}</h2>
+                                <p>${temple.description}</p>
                                 <button id="btnVisit">Visit</button>
                             </div>
                         </div>`;
